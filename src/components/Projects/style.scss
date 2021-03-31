@@ -1,0 +1,101 @@
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 769px) {
+    h1 {
+      padding: 0 20px;
+    }
+    p {
+      padding: 0 20px;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #41414d;
+  }
+  p {
+    color: #41414d;
+    a {
+      text-decoration: none;
+      color: #7159c1;
+    }
+    margin-bottom: 60px;
+    max-width: 650px;
+    text-align: center;
+  }
+  .box-projects {
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 769px) {
+      display: grid;
+    }
+
+    .box {
+      margin: 40px;
+      border: 1px solid #f4f4f4;
+      box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+      border-radius: 8px;
+      position: relative;
+      z-index: 99;
+      figure {
+        display: flex;
+        justify-content: center;
+        align-self: center !important;
+        figcaption {
+          position: absolute;
+          top: 70%;
+          text-align: center;
+          width: 300px;
+          z-index: -99;
+        }
+      }
+      figure {
+        padding: 0;
+        max-width: 400px;
+        margin: 0;
+        @media screen and (max-width: 500px) {
+          align-self: center !important;
+          width: 293px;
+          height: auto !important;
+          img {
+            align-self: center !important;
+            transform: translateY(-50px);
+            width: 100%;
+          }
+          margin-top: 0px;
+          figcaption {
+            p {
+              padding: 0;
+              margin: 0;
+            }
+          }
+        }
+        img {
+          @media screen and (max-width: 500px) {
+            width: 293px;
+          }
+          max-width: 400px;
+          border-radius: 8px;
+          transition: 1s;
+          cursor: pointer;
+        }
+        figcaption {
+        }
+      }
+
+      &:hover {
+        figure {
+          img {
+            transform: translateY(-80px);
+          }
+        }
+      }
+    }
+  }
+}

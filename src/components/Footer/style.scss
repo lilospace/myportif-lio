@@ -1,0 +1,39 @@
+footer {
+  margin-top: 150px;
+  width: 100%;
+  height: auto;
+  @media screen and (max-width: 769px) {
+    margin-top: 150px;
+  }
+  h1 {
+    text-align: center;
+    color: #41414d;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin-left: 20px;
+      img {
+        transition: 1s;
+        &:hover {
+          background-color: #7510f7;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: #7510f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 110px;
+    }
+  }
+}

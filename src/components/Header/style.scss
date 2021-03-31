@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: center;
+  ul {
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+    li {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+}

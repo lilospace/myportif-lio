@@ -1,0 +1,32 @@
+.curses {
+  h1 {
+    text-align: center;
+    color: #41414d;
+  }
+  .conteinerCurses {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      @media screen and(max-width:769px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      li {
+        padding: 30px;
+        .moldura {
+          width: 190px;
+          @media screen and(max-width:769px) {
+            width: 100%;
+          }
+
+          img {
+            width: 100%;
+
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}

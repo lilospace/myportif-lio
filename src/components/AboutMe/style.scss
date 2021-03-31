@@ -1,0 +1,33 @@
+.me {
+  height: 100vh;
+  margin-bottom: 0 !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin: 20px;
+    text-align: left;
+    font-size: 40px;
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica,
+      Arial, sans-serif;
+  }
+  p {
+    margin: 20px;
+    color: #41414d;
+    max-width: 800px;
+    font-size: 18px;
+  }
+  .assetsPc {
+    margin: -4px;
+    padding: 0;
+    .img-top {
+      width: 100%;
+      @media screen and (max-width: 500px) {
+        width: 365px;
+      }
+    }
+  }
+}
